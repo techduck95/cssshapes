@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image effects with CSS shapes</title>
+    
+    <link rel="stylesheet" href="./assets/css/polyscape.css">
+</head>
+<body>
+<nav>
+    <li class="active"><a href="#polyscape-1"></a></li>
+    <li><a href="#polyscape-2"></a></li>
+    <li><a href="#polyscape-3"></a></li>
+    <li><a href="#polyscape-4"></a></li>
+    <li><a href="#polyscape-5"></a></li>
+</nav>
+
+<div id="polyscape-1" class="polyscape-background">
+    <div class="square-rotated"></div>
+    <div class="square"></div>
+    <div class="circle"></div>
+</div>
+
+<div id="polyscape-2" class="polyscape-background">
+    <div class="diamond"></div>
+    <div class="diamond"></div>
+</div>
+
+<div id="polyscape-3" class="polyscape-background">
+    <div class="triangle"></div>
+</div>
+
+<div id="polyscape-4" class="polyscape-background">
+    <div class="square-rotated"></div>
+    <div class="square-rotated-small"></div>
+    <div class="square"></div>
+    <div class="circle"></div>
+</div>
+
+<div id="polyscape-5" class="polyscape-background">
+    <div class="triangle"></div>
+    <div class="triangle"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/js/scroll.js"></script>
+<script>
+    $('#close-header').on('click', function (){
+        $(this).parent().addClass('hidden');
+    });
+</script>
+</body>
+</html>
